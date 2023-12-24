@@ -25,25 +25,41 @@
 </script>
 
 <table style="max-width: 700px; border: 0;width:100%" cellpadding="4" cellspacing="0">
-<tr> <td colspan="2">
-<br /> <span class="bold-text">Evaluator</span>
-</td> </tr> <tr> <td style="width:50%">
-<label for="EvaluatorName">Evaluator name*:</label><br />
-<input name="EvaluatorName" id="EvaluatorName" type="text" maxlength="100" style="max-width: 300px;width:100%" />
-</td> <td style="width:50%">
-<label for="KnewStudentFor">How long have you known this student?</label><br />
-<select name="KnewStudentFor" id="KnewStudentFor">
-<option value="0-1 year">1 year or less</option>
-<option value="1-3 years">1 - 3 years</option>
-<option value="over 3 years">more than 3 years</option>
-</select>
-</td> </tr> <tr> <td>
-<label for="EvaluatorPhoneNumber">Evaluator phone number:</label><br />
-<input name="EvaluatorPhoneNumber" id="EvaluatorPhoneNumber" type="text" maxlength="50" style="max-width: 300px;width:100%" />
-</td> <td>
-<label for="EvaluatorEmailAddress">Evaluator email address:</label><br />
-<input name="EvaluatorEmailAddress" id="EvaluatorEmailAddress" type="text" maxlength="100" style="max-width: 300px;width:100%" />
-</td> </tr> <tr> <td colspan="2">
+    <tr> 
+        <td colspan="3">
+            <br /> <span class="bold-text">Evaluator</span>
+        </td> 
+    </tr> 
+    <tr> 
+        <td style="width:33%">
+            <label for="EvaluatorName">Evaluator name*:</label><br />
+            <input name="EvaluatorName" id="EvaluatorName" type="text" maxlength="100" style="max-width: 300px;width:100%" />
+        </td> 
+        <td style="width:34%">
+            <!-- Date picker for the evaluator -->
+            <label for="EvaluationDate">Evaluation date:</label><br />
+            <input type="date" id="EvaluationDate" name="EvaluationDate" style="width:100%" />
+        </td> 
+        <td style="width:33%">
+            <label for="KnewStudentFor">How long have you known this student?</label><br />
+            <select name="KnewStudentFor" id="KnewStudentFor">
+                <option value="0-1 year">1 year or less</option>
+                <option value="1-3 years">1 - 3 years</option>
+                <option value="over 3 years">more than 3 years</option>
+            </select>
+        </td> 
+    </tr> 
+    <tr> 
+        <td>
+            <label for="EvaluatorPhoneNumber">Evaluator phone number:</label><br />
+            <input name="EvaluatorPhoneNumber" id="EvaluatorPhoneNumber" type="text" maxlength="50" style="max-width: 300px;width:100%" />
+        </td> 
+        <td>
+            <label for="EvaluatorEmailAddress">Evaluator email address:</label><br />
+            <input name="EvaluatorEmailAddress" id="EvaluatorEmailAddress" type="text" maxlength="100" style="max-width: 300px;width:100%" />
+        </td> 
+    </tr> 
+    <tr> <td colspan="2">
 <br /> <span class="bold-text">Student</span>
 </td> </tr> <tr> <td>
 <label for="StudentName">Student name*:</label><br />
