@@ -24,7 +24,7 @@
     }
 </script>
 
-<table style="max-width: 700px; border: 0;width:100%" cellpadding="4" cellspacing="0">
+<table style="max-width: 700px; border: 1;width:100%" cellpadding="4" cellspacing="0">
     <tr> 
         <td colspan="3">
             <br /> <span class="bold-text">Evaluator</span>
@@ -95,18 +95,21 @@
             </label><br />
         </td>
 
-<script>
-function updateLabel(value) {
-    document.getElementById('timesLabel').innerText = value;
-}
-</script>
+    <script>
+    function updateLabel(value) {
+        document.getElementById('timesLabel').innerText = value;
+    }
+    </script>
 
     </tr> 
     <tr> 
         <td>
-            <label for="EvaluatorPhoneNumber">Evaluator phone number:</label><br />
-            <input name="EvaluatorPhoneNumber" id="EvaluatorPhoneNumber" type="text" maxlength="50" style="max-width: 300px;width:100%" />
+            <label for="StudentNames">本班固定学员名单
+            <input name="StudentNames" id="StudentNames" type="text" maxlength="50" style="max-width: 300px;width:100%" />
+            </label><br />
         </td> 
+    </tr> 
+    <tr> 
         <td>
             <label for="EvaluatorEmailAddress">Evaluator email address:</label><br />
             <input name="EvaluatorEmailAddress" id="EvaluatorEmailAddress" type="text" maxlength="100" style="max-width: 300px;width:100%" />
