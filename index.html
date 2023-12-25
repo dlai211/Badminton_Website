@@ -32,22 +32,39 @@
     </tr> 
     <tr> 
         <td style="width:33%">
-            <label for="EvaluatorName">Evaluator name*:</label><br />
-            <input name="EvaluatorName" id="EvaluatorName" type="text" maxlength="100" style="max-width: 300px;width:100%" />
+            <!-- Date picker for the evaluator -->
+            <label for="CourseDate">Course date:</label><br />
+            <input type="date" id="CourseDate" name="CourseDate" style="width:100%" />
+           
         </td> 
         <td style="width:34%">
-            <!-- Date picker for the evaluator -->
-            <label for="EvaluationDate">Evaluation date:</label><br />
-            <input type="date" id="EvaluationDate" name="EvaluationDate" style="width:100%" />
-        </td> 
-        <td style="width:33%">
-            <label for="KnewStudentFor">How long have you known this student?</label><br />
-            <select name="KnewStudentFor" id="KnewStudentFor">
-                <option value="0-1 year">1 year or less</option>
-                <option value="1-3 years">1 - 3 years</option>
-                <option value="over 3 years">more than 3 years</option>
+            <label for="EvaluatorName">Evaluator name*:</label><br />
+            <!--
+            input name="EvaluatorName" id="EvaluatorName" type="text" maxlength="100" style="max-width: 300px;width:100%" />
+            -->
+            <select name="EvaluatorName" id="EvaluatorName">
+                <option value="QiuYin">邱音</option>
             </select>
         </td> 
+        <td style="width:33%">
+            <label for="CourseTimes">This course is <span id="timesLabel">__</span> times</label><br />
+            <select name="CourseTimes" id="CourseTimes" onchange="updateLabel(this.value);">
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <!-- Add additional options as needed -->
+                <option value="4th">4th</option>
+                <option value="5th">5th</option>
+                <!-- etc... -->
+            </select>
+        </td>
+
+<script>
+function updateLabel(value) {
+    document.getElementById('timesLabel').innerText = value;
+}
+</script>
+
     </tr> 
     <tr> 
         <td>
