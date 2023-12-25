@@ -33,21 +33,22 @@
     <tr> 
         <td style="width:33%">
             <!-- Date picker for the evaluator -->
-            <label for="CourseDate">Course date:</label><br />
+            <label for="CourseDate">上课日期:</label><br />
             <input type="date" id="CourseDate" name="CourseDate" style="width:100%" />
            
         </td> 
         <td style="width:34%">
-            <label for="EvaluatorName">Evaluator name*:</label><br />
+            <label for="EvaluatorName">教练员*:</label><br />
             <!--
             input name="EvaluatorName" id="EvaluatorName" type="text" maxlength="100" style="max-width: 300px;width:100%" />
             -->
             <select name="EvaluatorName" id="EvaluatorName">
+                <option value="">- 教练名字 -</option>
                 <option value="QiuYin">邱音</option>
             </select>
         </td> 
         <td style="width:33%">
-            <label for="CourseTimes">This course is <span id="timesLabel">__</span> times</label><br />
+            <label for="CourseTimes">本期第 
             <select name="CourseTimes" id="CourseTimes" onchange="updateLabel(this.value);">
                 <option value="1st">1st</option>
                 <option value="2nd">2nd</option>
@@ -57,6 +58,8 @@
                 <option value="5th">5th</option>
                 <!-- etc... -->
             </select>
+                次上课
+            </label><br />
         </td>
 
 <script>
