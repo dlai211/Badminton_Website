@@ -77,15 +77,71 @@
 
       <div class="formbold-mb-5">
         <label for="guest" class="formbold-form-label">
-          How many guest are you bringing?
+          本班固定学员名单：
         </label>
         <input
-          type="number"
-          name="guest"
-          id="guest"
-          placeholder="5"
+          type="name"
+          name="student"
+          id="student"
           class="formbold-form-input"
         />
+      </div>
+
+      <div class="flex flex-wrap formbold--mx-3">
+        <div class="w-full sm:w-33 formbold-px-3">
+          <div class="formbold-mb-5">
+            <label for="CourseType" class="formbold-form-label"> 本班班型*: </label>
+            <select name="CourseType" id="CourseType" class="formbold-form-input">
+                <option value=" "> </option>
+                <option value="1v1">1v1</option>
+                <option value="1v2">1v2</option>
+                <option value="1v3">1v3</option>
+                <option value="1v4">1v4</option>
+                <option value="1v5">1v5</option>
+                <option value="1v6">1v6</option>
+                <option value="other">其他</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="w-full sm:w-33 formbold-px-3">
+          <div class="formbold-mb-5">
+            <label for="StudentPresent" class="formbold-form-label"> 本班实到人数*: </label>
+            <select name="StudentPresent" id="StudentPresent" class="formbold-form-input">
+                <option value=" "> </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="other">其他</option>
+            </select>
+          </div>
+        </div>
+        <div class="w-full sm:w-33 formbold-px-3">
+          <div class="formbold-mb-5">
+            <label for="StudentNotPresent" class="formbold-form-label"> 本班末到人数*: </label>
+            <select name="StudentNotPresent" id="StudentNotPresent" class="formbold-form-input">
+                <option value=" "> </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="other">其他</option>
+            </select>
+          </div>
+        </div>
       </div>
 
       <div class="flex flex-wrap formbold--mx-3">
