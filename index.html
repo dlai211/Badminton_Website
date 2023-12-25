@@ -24,7 +24,7 @@
     }
 </script>
 
-<table style="max-width: 700px; border: 1px solid;width:100%" cellpadding="4" cellspacing="0">
+<table style="max-width: 700px; border: 0;width:100%" cellpadding="4" cellspacing="0">
     <tr> 
         <td colspan="3">
             <br /> <span class="bold-text">Evaluator</span>
@@ -51,6 +51,7 @@
         <td style="width:33%">
             <label for="CourseTimes">本期第 
             <select name="CourseTimes" id="CourseTimes" onchange="updateLabel(this.value);">
+                <option value=" "> </option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -104,18 +105,67 @@
 
     </tr> 
     <tr> 
-        <td>
+        <td style="width:100%">
             <label for="StudentNames">本班固定学员名单
-            <input name="StudentNames" id="StudentNames" type="text" maxlength="50" style="max-width: 300px;width:100%" />
+            <input name="StudentNames" id="StudentNames" type="text" />
             </label><br />
         </td> 
     </tr> 
     <tr> 
-        <td>
-            <label for="EvaluatorEmailAddress">Evaluator email address:</label><br />
-            <input name="EvaluatorEmailAddress" id="EvaluatorEmailAddress" type="text" maxlength="100" style="max-width: 300px;width:100%" />
+        <td style="width:50%">
+            <label for="CourseType">本班班型
+            <select name="CourseType" id="CourseType">
+                <option value=" "> </option>
+                <option value="1v1">1v1</option>
+                <option value="1v2">1v2</option>
+                <option value="1v3">1v3</option>
+                <option value="1v4">1v4</option>
+                <option value="1v5">1v5</option>
+                <option value="1v6">1v6</option>
+                <option value="other">其他</option>
+            </select>
+            </label><br />
         </td> 
     </tr> 
+    <tr> 
+        <td style="width:25%">
+            <label for="StudentPresent">本班实到人数</label><br />
+            <select name="StudentPresent" id="StudentPresent">
+                <option value=" "> </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="other">其他</option>
+            </select>
+        </td> 
+    </tr> 
+    <tr> 
+        <td style="width:25%">
+            <label for="StudentNotPresent">本班末到人数</label><br />
+            <select name="StudentNotPresent" id="StudentNotPresent">
+                <option value=" "> </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="other">其他</option>
+            </select>
+        </td> 
+    </tr> 
+    
     <tr> <td colspan="2">
 <br /> <span class="bold-text">Student</span>
 </td> </tr> <tr> <td>
