@@ -76,7 +76,7 @@
       </div>
 
       <div class="formbold-mb-5">
-        <label for="guest" class="formbold-form-label">
+        <label for="studentlist" class="formbold-form-label">
           本班固定学员名单：
         </label>
         <input
@@ -109,6 +109,7 @@
             <label for="StudentPresent" class="formbold-form-label"> 本班实到人数*: </label>
             <select name="StudentPresent" id="StudentPresent" class="formbold-form-input">
                 <option value=" "> </option>
+                <option value="0">0</option>  
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -128,6 +129,7 @@
             <label for="StudentNotPresent" class="formbold-form-label"> 本班末到人数*: </label>
             <select name="StudentNotPresent" id="StudentNotPresent" class="formbold-form-input">
                 <option value=" "> </option>
+                <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -144,6 +146,50 @@
         </div>
       </div>
 
+      <div class="flex flex-wrap formbold--mx-3">
+        <div class="w-full sm:w-33 formbold-px-3">
+          <div class="formbold-mb-5">
+            <label for="studentnotavailable" class="formbold-form-label">
+              本班末到学员：
+            </label>
+            <input
+              type="name"
+              name="studentnotavailable"
+              id="studentnotavailable"
+              class="formbold-form-input"
+            />
+          </div>
+        </div>
+        
+        <div class="w-full sm:w-33 formbold-px-3">
+          <div class="formbold-mb-5">
+            <label for="make-upstudent" class="formbold-form-label">
+              补课学员：
+            </label>
+            <input
+              type="name"
+              name="make-upstudent"
+              id="make-upstudent"
+              class="formbold-form-input"
+            />
+          </div>
+        </div>
+        <div class="w-full sm:w-33 formbold-px-3">
+          <div class="formbold-mb-5">
+            <label for="trialstudent" class="formbold-form-label">
+              试听学员：
+            </label>
+            <input
+              type="name"
+              name="trialstudent"
+              id="trialstudent"
+              class="formbold-form-input"
+            />
+          </div>
+        </div>
+      </div>
+
+      
       <div class="flex flex-wrap formbold--mx-3">
         <div class="w-full sm:w-half formbold-px-3">
           <div class="formbold-mb-5 w-full">
